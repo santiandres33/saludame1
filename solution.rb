@@ -2,6 +2,7 @@ require 'sinatra'
 
 get '/' do
     
-    params[:name] == nil || nil ? @nombre = "desconosido" : @nombre = params[:name]
+    params[:name] == nil || nil ? @nombre = "desconocido" : @nombre = params[:name]
     erb :hola
+    
 end
