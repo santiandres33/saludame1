@@ -1,8 +1,9 @@
 require 'sinatra' 
 
-get '/makers/:name' do
+get '/' do
     
-    @nombre = params[:name]
+    params[:nombre] == "" || params[:nombre] == nil ? @name = "desconocido" : @name = params[:nombre]
     erb :hola
     
 end
+
